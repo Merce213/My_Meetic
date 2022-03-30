@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background: url("../img/bg.jpg") no-repeat;
+  font-family: "Loved by the king", cursive;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**************************** HEADER ****************************/
+.logo {
+  width: 120px;
+}
+
+nav {
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.flex {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  float: right;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #e64280;
+  position: relative;
+}
+
+nav li .account i {
+  width: 20px;
+}
+
+nav li a {
+  border: 1px solid lightgrey;
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: white;
+  text-decoration: none;
+  color: #4d4d4d;
+  transition: ease all 0.2s;
+}
+
+nav li a:hover {
+  background-color: #4d4d4d;
+  color: #e64280;
+}
+
+nav ul.sub {
+  position: absolute;
+  display: none;
+}
+
+/****************** LOGIN ******************/
+.title {
+  text-align: center;
+  padding: 0 0 20px;
+  font-size: 2rem;
+}
+
+.loginbox {
+  max-width: 420px;
+  width: 100%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #e64280;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 20px;
+  border-radius: 5px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 15px);
+}
+
+.loginbox label {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+.loginbox input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.loginbox input[type="email"],
+.loginbox input[type="password"] {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  height: 40px;
+  color: #969696;
+  font-size: 1.05rem;
+}
+
+input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #e64280;
+  font-size: 1.05rem;
+  color: #4d4d4d;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  font-weight: bold;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background: #4d4d4d;
+  color: #e64280;
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 30px;
+  color: #969696;
+  text-transform: uppercase;
+}
+
+.loginbox a:hover {
+  color: #fff;
+}
+/******************** REGISTER ********************/
+.registerbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #e64280;
+  margin: 10px;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.registerbox form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .input-box {
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+  background: transparent;
+  outline: none;
+  color: #969696;
+  font-size: 1.05rem;
+}
+
+form .gender-details {
+  width: 100%;
+}
+
+form .gender-details .gender-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+form .gender-details .category {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+  font-size: 1.3rem;
+}
+
+form .button {
+  margin-bottom: 15px;
+}
+
+.registerbox a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 10px;
+  color: #969696;
+  text-transform: uppercase;
+}
+
+.registerbox a:hover {
+  color: #fff;
+}
+
+/***************** Account *****************/
+.account_container {
+  max-width: 450px;
+  width: 100%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #e64280;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 20px;
+  border-radius: 5px;
+}
+
+.account_container h1 {
+  text-align: center;
+}
+
+.account_container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account_container form .input-box {
+  margin: 20px 0 50px 0;
+  display: flex;
+  width: 100%;
+}
+
+.account_container .input-box label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 80%;
+  padding-right: 10px;
+}
+
+.account_container .input-box input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+  background: transparent;
+  outline: none;
+  color: #969696;
+  font-size: 1.05rem;
+}
+
+.info {
+  font-size: 1.7rem;
+}

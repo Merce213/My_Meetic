@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem !important;
+}
+
+.welcome {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.mask__background {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(87deg, #172b4d 0, #4d1745 100%);
+  min-height: 600px;
+}
+
+.welcome.start__page {
+  background-image: url(../img/StoryGraphicsdatingnew.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+.mask__background.start__page {
+  background-image: url(../img/filtre.png);
+  opacity: 1;
+}
+.welcome.start__page,
+.mask__background.start__page {
+  height: 100vh;
+}
+.start__page--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.container-fluid {
+  margin-top: -6rem;
+  padding-right: 39px !important;
+  padding-left: 39px !important;
+  font-family: Open Sans, sans-serif;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo_container p {
+  font-size: 2rem;
+  color: white;
+}
+
+.logo__home {
+  max-width: 9rem;
+}
+
+.btn__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.start__btn {
+  width: 20%;
+  margin-right: 50px;
+}
+
+.start__btn:last-child {
+  margin-right: 0;
+}
+
+.register__button--submit {
+  border: none;
+  height: 46px;
+  border-radius: 22px;
+  margin-top: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #fff;
+  color: #ff7e96;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+}
